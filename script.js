@@ -9,7 +9,8 @@ var books = [
   "Ali Baba and the Forty Thieves",
   "Finding Me",
   "Becoming",
-  "The Light We Carry"
+  "The Light We Carry",
+  "The Gods Are Not to Blame"
 ];
 
 // Books visitors have recommended (I add new ones here by hand)
