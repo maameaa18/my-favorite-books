@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recommend a Book - My Favorite Books</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Recommend a Book</h1>
+      <p>Read something great? Tell me about it.</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">My Books</a></li>
+        <li><a href="contact.html">Recommend a Book</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <form method="GET" onsubmit="thanks()">
+        <p>
+          <label for="name">Your name</label><br />
+          <input type="text" id="name" name="name" required />
+        </p>
+
+        <p>
+          <label for="email">Your email</label><br />
+          <input type="email" id="email" name="email" required />
+        </p>
+
+        <p>
+          <label for="title">Book title</label><br />
+          <input type="text" id="title" name="title" required />
+        </p>
+
+        <p>
+          <label for="genre">Genre</label><br />
+          <select id="genre" name="genre">
+            <option value="fiction">Fiction</option>
+            <option value="memoir">Memoir</option>
+            <option value="non-fiction">Non-fiction</option>
+            <option value="folk-tale">Folk tale</option>
+          </select>
+        </p>
+
+        <fieldset>
+          <legend>Did you enjoy this book?</legend>
+          <p>
+            <label><input type="radio" name="enjoyed" value="yes" /> Yes</label>
+          </p>
+          <p>
+            <label><input type="radio" name="enjoyed" value="no" /> No</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Why do you recommend it?</legend>
+          <p>
+            <label><input type="checkbox" name="reason" value="story" /> Great story</label>
+          </p>
+          <p>
+            <label><input type="checkbox" name="reason" value="lessons" /> Life lessons</label>
+          </p>
+          <p>
+            <label><input type="checkbox" name="reason" value="funny" /> Funny</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="message">Tell me more</label><br />
+          <textarea id="message" name="message" rows="4" cols="40"></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Send recommendation</button>
+        </p>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 My Favorite Books</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

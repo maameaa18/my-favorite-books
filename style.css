@@ -1,0 +1,286 @@
+/* ---------- Basics ---------- */
+body {
+  font-family: Georgia, serif;
+  background-color: #fdf6ec;
+  color: #2b2b2b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ---------- Header ---------- */
+header {
+  background: linear-gradient(135deg, #1f4e5f, #2e7d8c);
+  color: white;
+  text-align: center;
+  padding: 2.5em 1em;
+}
+
+header h1 {
+  margin: 0 0 0.3em 0;
+  font-size: 2.4em;
+  letter-spacing: 2px;
+}
+
+header p {
+  margin: 0;
+  font-style: italic;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+  background-color: #163a47;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  list-style: none;
+  margin: 0;
+  padding: 0.8em;
+}
+
+nav a:link,
+nav a:visited {
+  color: #f4c95d;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.4em 0.9em;
+  border-radius: 20px;
+}
+
+nav a:hover {
+  background-color: #f4c95d;
+  color: #163a47;
+}
+
+/* ---------- Main content ---------- */
+main {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+article,
+section,
+aside {
+  background-color: white;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  border-radius: 12px;
+  border-top: 5px solid #e07a5f;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+h2 {
+  color: #1f4e5f;
+  border-bottom: 2px dashed #f4c95d;
+  padding-bottom: 0.3em;
+}
+
+/* Links inside the page content */
+main a:link {
+  color: #e07a5f;
+}
+
+main a:visited {
+  color: #8a5a8a;
+}
+
+main a:hover {
+  text-decoration: none;
+}
+
+/* Messages written by JavaScript */
+#welcome,
+#book-count {
+  background-color: #fff3cd;
+  border-left: 5px solid #f4c95d;
+  padding: 0.6em 1em;
+  border-radius: 6px;
+}
+
+/* ---------- Images ---------- */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+article img {
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+/* ---------- Book covers (flip cards) ---------- */
+.covers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.book {
+  width: 180px;
+  height: 270px;
+  perspective: 1000px;
+}
+
+.book-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+.book:hover .book-inner,
+.book:focus .book-inner {
+  transform: rotateY(180deg);
+}
+
+.book-front,
+.book-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.book-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.book-back {
+  transform: rotateY(180deg);
+  background-color: #1f4e5f;
+  color: white;
+  padding: 0.8em;
+  box-sizing: border-box;
+  overflow: auto;
+  font-size: 0.85em;
+}
+
+.book-back h3 {
+  color: #f4c95d;
+  margin: 0 0 0.4em 0;
+  font-size: 1em;
+}
+
+.book-back p {
+  margin: 0;
+}
+
+/* ---------- Table ---------- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+caption {
+  font-style: italic;
+  padding: 0.5em;
+}
+
+th,
+td {
+  border: 1px solid #c9b79c;
+  padding: 0.6em;
+  text-align: left;
+}
+
+thead th {
+  background-color: #1f4e5f;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fbf0dc;
+}
+
+/* ---------- Form ---------- */
+form {
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 12px;
+  border-top: 5px solid #e07a5f;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  box-sizing: border-box;
+  border: 1px solid #c9b79c;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #f4c95d;
+}
+
+fieldset {
+  margin-bottom: 1em;
+  border: 1px solid #c9b79c;
+  border-radius: 8px;
+}
+
+legend {
+  color: #1f4e5f;
+  font-weight: bold;
+}
+
+button {
+  background-color: #e07a5f;
+  color: white;
+  border: none;
+  padding: 0.7em 1.4em;
+  border-radius: 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c4573c;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: #163a47;
+  color: #f4c95d;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ---------- Small screens ---------- */
+@media (width <= 40em) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .covers {
+    justify-content: center;
+  }
+}

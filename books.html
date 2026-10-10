@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Books - My Favorite Books</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>My Books</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">My Books</a></li>
+        <li><a href="contact.html">Recommend a Book</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>My Favorites</h2>
+        <p id="book-count"></p>
+        <p>Hover over a cover (or tap it) to flip it and read about the book.</p>
+
+        <div class="covers">
+          <div class="book" tabindex="0">
+            <div class="book-inner">
+              <div class="book-front">
+                <img src="images/lagos.jpg" alt="Cover of Nearly All the Men in Lagos Are Mad" />
+              </div>
+              <div class="book-back">
+                <h3>Nearly All the Men in Lagos Are Mad</h3>
+                <p>Twelve short stories about love, dating and marriage in Lagos. Funny, bold and very honest.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="book" tabindex="0">
+            <div class="book-inner">
+              <div class="book-front">
+                <img src="images/alibaba.jpg" alt="Cover of Ali Baba and the Forty Thieves" />
+              </div>
+              <div class="book-back">
+                <h3>Ali Baba and the Forty Thieves</h3>
+                <p>A poor woodcutter finds a thieves' secret cave and a magic password. Clever Morgiana saves the day.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="book" tabindex="0">
+            <div class="book-inner">
+              <div class="book-front">
+                <img src="images/findingme.jpg" alt="Cover of Finding Me by Viola Davis" />
+              </div>
+              <div class="book-back">
+                <h3>Finding Me</h3>
+                <p>Viola Davis tells the story of growing up in hardship and finding her voice and her purpose.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="book" tabindex="0">
+            <div class="book-inner">
+              <div class="book-front">
+                <img src="images/becoming.jpg" alt="Cover of Becoming by Michelle Obama" />
+              </div>
+              <div class="book-back">
+                <h3>Becoming</h3>
+                <p>Michelle Obama's memoir, from her childhood in Chicago to her years as First Lady.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="book" tabindex="0">
+            <div class="book-inner">
+              <div class="book-front">
+                <img src="images/light.jpg" alt="Cover of The Light We Carry by Michelle Obama" />
+              </div>
+              <div class="book-back">
+                <h3>The Light We Carry</h3>
+                <p>Michelle Obama shares the habits and lessons that help her stay steady in uncertain times.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <table>
+          <caption>Books I love</caption>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Genre</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Nearly All the Men in Lagos Are Mad</th>
+              <td>Damilare Kuku</td>
+              <td>Literary fiction (short stories)</td>
+            </tr>
+            <tr>
+              <th>Ali Baba and the Forty Thieves</th>
+              <td>Folk tale (One Thousand and One Nights)</td>
+              <td>Folk tale / fantasy</td>
+            </tr>
+            <tr>
+              <th>Finding Me</th>
+              <td>Viola Davis</td>
+              <td>Memoir</td>
+            </tr>
+            <tr>
+              <th>Becoming</th>
+              <td>Michelle Obama</td>
+              <td>Memoir</td>
+            </tr>
+            <tr>
+              <th>The Light We Carry</th>
+              <td>Michelle Obama</td>
+              <td>Non-fiction (self-help)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Recommended by Visitors</h2>
+        <p>Books people have sent me through the <a href="contact.html">recommend page</a>:</p>
+        <ul id="recommended"></ul>
+      </section>
+
+      <section>
+        <h2>Books I Want to Read</h2>
+        <ul>
+          <li>Book title</li>
+          <li>Book title</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How I Pick a Book</h2>
+        <ol>
+          <li>Read the back cover</li>
+          <li>Read the first page</li>
+          <li>Ask a friend</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 My Favorite Books</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      showBookCount();
+      showRecommended();
+    </script>
+  </body>
+</html>
